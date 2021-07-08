@@ -1,7 +1,7 @@
 {
-  "name": "mentorship-page",
+  "name": "pathways-page",
   "version": "0.1.0",
-  "homepage": "https://mentorship.advisory.sg/",
+  "homepage": "https://pathways.advisory.sg/",
   "private": true,
   "dependencies": {
     "@material-ui/core": "^4.11.4",
