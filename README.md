@@ -1,4 +1,4 @@
-# pathways-page ![Build and Deploy Theme](https://github.com/AdvisorySG/pathways-page/workflows/Build%20and%20Deploy%20Theme/badge.svg)
+# pathways-page [![Netlify Status](https://api.netlify.com/api/v1/badges/822d1da0-cc12-4138-a7d6-7704574512d9/deploy-status)](https://app.netlify.com/sites/unruffled-goldstine-99dc07/deploys)
 
 React app for Advisory's Pathways page. This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
