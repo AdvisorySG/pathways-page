@@ -11,9 +11,7 @@ const CloseButton = ({ onClose }) => (
   </button>
 );
 
-const ProfileModal = ({ isOpen, mentor, onClose }) => {
-  mentor || (mentor = {});
-
+const ProfileModal = ({ isOpen, onClose }) => {
   const scrollEl = useRef(null);
 
   // Disable body scroll when modal is open.
@@ -35,44 +33,6 @@ const ProfileModal = ({ isOpen, mentor, onClose }) => {
       contentLabel="View Details"
     >
       <CloseButton onClose={onClose} />
-      <div className="modal-content" ref={scrollEl}>
-        <div className="modal-left">
-          <img
-            className="modal-image"
-            src={process.env.PUBLIC_URL + mentor.fullImageUrl}
-            alt={mentor.name}
-          />
-          <div class="modal-metadata-container">
-            <h2>{mentor.name}</h2>
-            <div className="modal-metadata">
-              <strong>Role:</strong> {mentor.role}
-            </div>
-            {mentor.industries && (
-              <div className="modal-metadata">
-                <strong>Industries:</strong> {mentor.industries.join(", ")}
-              </div>
-            )}
-            {mentor.organisation && (
-              <div className="modal-metadata">
-                <strong>Organisation:</strong> {mentor.organisation}
-              </div>
-            )}
-            {mentor.school && (
-              <div className="modal-metadata">
-                <strong>School Graduated From:</strong> {mentor.school}
-              </div>
-            )}
-            {mentor.courseOfStudy && (
-              <div className="modal-metadata">
-                <strong>Course of Study:</strong> {mentor.courseOfStudy}
-              </div>
-            )}
-          </div>
-        </div>
-        <div className="modal-right">
-          <p className="modal-bio">{mentor.fullBio}</p>
-        </div>
-      </div>
     </ReactModal>
   );
 };
