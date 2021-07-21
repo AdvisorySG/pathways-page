@@ -31,6 +31,13 @@
 
 .card-container {
   display: flex;
-  flex-flow: row wrap;
+  flex: none;
+  /* flex-wrap: wrap; */
   justify-content: center;
+}
+
+@media only screen and (max-width: 768px) {
+  .card-container {
+    flex-wrap: wrap;
+  }
 }
