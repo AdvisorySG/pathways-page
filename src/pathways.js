@@ -6,12 +6,12 @@ const pathways = {
       {
         name: "Philip Hur",
         designation: "Head of APAC Partnerships, Commerce & Signals",
-        imageUrl: "/instructors/philiphur.jpg",
+        imageUrl: "/instructors/PhilipHur.jpg",
       },
       {
         name: "Jimmy Guo",
         designation: "Partner Solutions Manager",
-        imageUrl: "/instructors/jimmyguo.jpg",
+        imageUrl: "/instructors/JimmyGuo.jpg",
       },
     ],
     blurb:
@@ -24,17 +24,17 @@ const pathways = {
       {
         name: "Kush Sagar",
         designation: "Commerce Platforms Lead, APAC",
-        imageUrl: "/instructors/kushsagar.jpg",
+        imageUrl: "/instructors/KushSagar.jpg",
       },
       {
         name: "Cecilia",
         designation: "tbc",
-        imageUrl: "/instructors/cecilialv.jpg",
+        imageUrl: "/instructors/CeciliaLV.jpg",
       },
       {
         name: "Nayana",
         designation: "tbc",
-        imageUrl: "/instructors/nayanakamath.jpg",
+        imageUrl: "/instructors/NayanaKamath.jpg",
       },
     ],
     blurb:
@@ -47,17 +47,17 @@ const pathways = {
       {
         name: "Anthony Isaakidis",
         designation: "Manager, Technical Partner Management",
-        imageUrl: "/instructors/anthonyisaakidis.jpg",
+        imageUrl: "/instructors/AnthonyIsaakidis.jpg",
       },
       {
         name: "Vinh Mai",
         designation: "Measurement Partnerships Lead, APAC",
-        imageUrl: "/instructors/vinhmai.jpg",
+        imageUrl: "/instructors/VinhMai.jpg",
       },
       {
         name: "Naomi Peles",
         designation: "Partner Solutions Lead, Australia & New Zealand",
-        imageUrl: "/instructors/naomipeles.jpg",
+        imageUrl: "/instructors/NaomiPeles.jpg",
       },
     ],
     blurb:
@@ -70,7 +70,7 @@ const pathways = {
       {
         name: "Rishi Daryanani",
         designation: "Solutions Engineer",
-        imageUrl: "/instructors/rishidaryanani.jpg",
+        imageUrl: "/instructors/RishiDaryanani.jpg",
       },
     ],
     blurb:

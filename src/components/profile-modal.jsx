@@ -11,7 +11,9 @@ const CloseButton = ({ onClose }) => (
   </button>
 );
 
-const ProfileModal = ({ isOpen, onClose }) => {
+const ProfileModal = ({ isOpen, pathway, onClose }) => {
+  pathway || (pathway = {});
+
   const scrollEl = useRef(null);
 
   // Disable body scroll when modal is open.
@@ -33,6 +35,37 @@ const ProfileModal = ({ isOpen, onClose }) => {
       contentLabel="View Details"
     >
       <CloseButton onClose={onClose} />
+      <div className="modal-content" ref={scrollEl}>
+        <div className="modal-main">
+          <div className="modal-left">
+            <div class="modal-metadata-container">
+              <h2>{pathway.title}</h2>
+              <p style={{ fontSize: "1.1rem" }}>{pathway.blurb}</p>
+            </div>
+          </div>
+          <div className="modal-right">
+            <div className="modal-video">
+              Video Added here 16:9 aspect ratio
+            </div>
+          </div>
+        </div>
+        <div className="modal-bottom">
+          {pathway.instructors &&
+            pathway.instructors.map(({ name, designation, imageUrl }) => (
+              <div className="modal-instructor">
+                <img
+                  className="modal-image"
+                  src={process.env.PUBLIC_URL + imageUrl}
+                  alt={name}
+                />
+                <div className="modal-instructor-text">
+                  <b>{name}</b>
+                  <p>{designation}</p>
+                </div>
+              </div>
+            ))}
+        </div>
+      </div>
     </ReactModal>
   );
 };
