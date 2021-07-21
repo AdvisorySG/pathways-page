@@ -64,9 +64,7 @@ function App() {
             <ProfileCard
               key={key}
               pathwayDetails={pathway}
-              onReadMore={() => {
-                activateModal(key);
-              }}
+              onReadMore={() => activateModal(key)}
             />
           ))}
         </div>

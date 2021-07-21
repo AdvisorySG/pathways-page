@@ -12,7 +12,7 @@ const CloseButton = ({ onClose }) => (
 );
 
 const ProfileModal = ({ isOpen, pathway, onClose }) => {
-  pathway || (pathway = {});
+  const { title, blurb, instructors } = pathway ?? {};
 
   const scrollEl = useRef(null);
 
@@ -39,19 +39,19 @@ const ProfileModal = ({ isOpen, pathway, onClose }) => {
         <div className="modal-main">
           <div className="modal-left">
             <div class="modal-metadata-container">
-              <h2>{pathway.title}</h2>
-              <p style={{ fontSize: "1.1rem" }}>{pathway.blurb}</p>
+              <h2>{title}</h2>
+              <p style={{ fontSize: "1.1rem" }}>{blurb}</p>
             </div>
           </div>
           <div className="modal-right">
             <div className="modal-video">
-              Video Added here 16:9 aspect ratio
+              <p>Placeholder text for video, 16:9 aspect ratio</p>
             </div>
           </div>
         </div>
         <div className="modal-bottom">
-          {pathway.instructors &&
-            pathway.instructors.map(({ name, designation, imageUrl }) => (
+          {instructors &&
+            instructors.map(({ name, designation, imageUrl }) => (
               <div className="modal-instructor">
                 <img
                   className="modal-image"
