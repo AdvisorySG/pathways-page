@@ -17,7 +17,7 @@ const useStyles = makeStyles({
     marginBottom: 48,
     borderRadius: "0px",
     "&:hover": {
-      boxShadow: "0px 0px 4px 5px #EBECF0 ",
+      boxShadow: "0px 0px 4px 5px #EBECF0",
     },
   },
   media: {
@@ -42,24 +42,21 @@ const useStyles = makeStyles({
 
 export default function ProfileCard({ pathwayDetails, onReadMore }) {
   const classes = useStyles();
-  const mentors = [];
-  pathwayDetails.instructors.map((instructor) => {
-    mentors.push(instructor.name);
-  });
+  const mentors = pathwayDetails.instructors.map(({ name }) => name);
   return (
     <Card className={classes.root} variant="outlined">
       <CardActionArea onClick={onReadMore}>
         <CardMedia
           className={classes.media}
-          image={`/pathwayImages/${pathwayDetails.pathwayImage}`}
-          title={pathwayDetails.pathway}
+          image={pathwayDetails.imageUrl}
+          title={pathwayDetails.title}
         />
         <CardContent className={classes.content}>
           <Typography className={classes.pathway}>
-            {pathwayDetails.pathway}
+            {pathwayDetails.title}
           </Typography>
           <Typography className={classes.mentors}>
-            {mentors.join(",")}
+            {mentors.join(", ")}
           </Typography>
         </CardContent>
       </CardActionArea>
