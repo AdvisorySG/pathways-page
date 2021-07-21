@@ -1,9 +1,10 @@
 import React from "react";
 
-import pathways from "./pathways";
 import Header from "./components/header";
 import ProfileCard from "./components/profile-card";
 // import ProfileModal from "./components/profile-modal";
+import pathways from "./pathways";
+
 import "./App.css";
 
 // const setHash = (hash) => window.history.replaceState({}, "", `#${hash}`);
