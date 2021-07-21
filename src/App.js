@@ -59,19 +59,6 @@ function App() {
       <Header />
 
       <div className="canvas">
-        <p className="disclaimer">
-          <small>
-            The privacy and safety of our mentors is of utmost priority to
-            Advisory. Any attempt to approach or contact our mentors outside of
-            the parameters of the Advisory Mentorship Programme—whilst claiming
-            affiliation to Advisory, or misrepresenting a relationship to
-            Advisory—will be treated as misrepresentation, even fraudulent
-            misrepresentation, as considered under the Misrepresentation Act.
-            Advisory will take legal action against any individuals or
-            organisations who attempt to deceive, harass, or otherwise request
-            dishonest assistance from our mentors.
-          </small>
-        </p>
         <div className="card-container">
           {Object.entries(pathways).map(([key, pathway]) => (
             <ProfileCard

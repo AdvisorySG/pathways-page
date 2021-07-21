@@ -27,13 +27,13 @@ const pathways = {
         imageUrl: "/instructors/KushSagar.jpg",
       },
       {
-        name: "Cecilia",
-        designation: "tbc",
+        name: "Cecilia LV",
+        designation: "Partner Manager APAC, Creative Platforms",
         imageUrl: "/instructors/CeciliaLV.jpg",
       },
       {
-        name: "Nayana",
-        designation: "tbc",
+        name: "Nayana Kamath",
+        designation: "Partner Solutions Manager",
         imageUrl: "/instructors/NayanaKamath.jpg",
       },
     ],

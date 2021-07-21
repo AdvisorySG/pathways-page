@@ -18,7 +18,26 @@ const NavBar = () => (
 const Header = () => (
   <div className="header">
     <NavBar />
-    <div className="header-bottom"></div>
+    <div className="header-bottom">
+      <div className="header-pathways-intro">
+        <p>
+          Pathways is a series of skills development courses that helps students
+          succeed in the real world by upgrading themselves and learning
+          important skills not taught inside the classroom.
+        </p>
+        <p>
+          Click{" "}
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://advisorysg.typeform.com/to/UG7Vri8s#source=pathwaysite"
+          >
+            here
+          </a>{" "}
+          to apply. Applications close <b>??? (GMT +8).</b>
+        </p>
+      </div>
+    </div>
   </div>
 );
 
