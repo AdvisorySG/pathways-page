@@ -9,8 +9,8 @@
 .modal-container {
   display: flex;
   position: absolute;
-  top: 12%;
-  bottom: 12%;
+  top: 6%;
+  bottom: 6%;
   left: 10%;
   right: 10%;
   box-sizing: border-box;
@@ -51,7 +51,20 @@
 /* Allow content to overflow, without affecting positioning of close button. */
 .modal-content {
   flex: 1;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   overflow: auto;
+}
+.modal-instructor {
+  display: flex;
+  height: 80%;
+  flex-direction: row;
+  text-align: left;
+  min-width: 250px;
+}
+.modal-instructor-text {
+  margin: auto 0;
 }
 .modal-close {
   cursor: pointer;
@@ -67,9 +80,13 @@
   outline: none;
 }
 .modal-image {
-  height: 250px;
+  height: 80%;
   max-width: 100%;
-  margin: 0 auto;
+  margin: auto 20px auto 0;
+}
+.modal-video {
+  aspect-ratio: 16 / 9;
+  margin: auto 0;
 }
 .modal-metadata-container {
   width: 80%;
@@ -85,16 +102,36 @@
   font-size: 90%;
 }
 @media only screen and (max-width: 600px) {
+  .modal-main {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    border-bottom: 2px #ccc solid;
+  }
   .modal-left {
     padding: 20px 0;
     margin: 0 auto;
-    border-bottom: 1px solid #ccc;
   }
   .modal-right {
-    margin: 20px 0;
+    margin: 20px 12px;
   }
   .modal-bio {
     font-size: 100%; /* Larger font size on mobile */
+  }
+  .modal-bottom {
+    display: flex;
+    flex: 0;
+    width: 90%;
+    margin: 0 auto;
+    flex-direction: column;
+  }
+  .modal-instructor {
+    height: 150px;
+  }
+  .modal-image {
+    height: 60%;
+    margin-top: auto;
+    margin-bottom: auto;
   }
 }
 /*
@@ -104,18 +141,24 @@
 @media only screen and (min-width: 601px) {
   .modal-content {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: flex-start;
   }
+  .modal-main {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    border-bottom: 2px #ccc solid;
+  }
   .modal-left {
-    flex: 45 1 auto;
-    width: 45%;
-    border-right: 1px solid #ccc;
+    flex: 50 1 auto;
+    width: 50%;
   }
   .modal-right {
-    flex: 55 1 auto;
-    width: 55%;
+    flex: 50 1 auto;
+    width: 50%;
+    padding-right: 24px;
   }
   .modal-left,
   .modal-right {
@@ -123,5 +166,21 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+  }
+  .modal-bottom {
+    display: flex;
+    flex: 0;
+    width: 90%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-evenly;
+    padding: auto 0;
+    margin: 0 auto;
+  }
+  .modal-instructor {
+    width: 30%;
+    height: 150px;
+    margin-top: 20px;
   }
 }
