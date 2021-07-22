@@ -39,7 +39,7 @@ const Header = () => (
           >
             here
           </a>{" "}
-          to apply. Applications close <b>??? (GMT +8).</b>
+          to apply. Applications close on <b>8 August 2021, 2359h (GMT +8)</b>.
         </p>
       </div>
     </div>
