@@ -2,6 +2,8 @@ const pathways = {
   businessStrategy: {
     title: "Business Strategy",
     imageUrl: "/pathways/BusinessStrategy.jpg",
+    videoUrl:
+      "https://drive.google.com/file/d/1y4WLf0sYHDwFJHeH7HKYJ-Zh5tHqWkKU/preview",
     instructors: [
       {
         name: "Philip Hur",
@@ -20,6 +22,8 @@ const pathways = {
   careerDevelopment: {
     title: "Career Development",
     imageUrl: "/pathways/CareerDevelopment.jpg",
+    videoUrl:
+      "https://drive.google.com/file/d/1IpBSknayeid9T4gEy05cOLnaYagjTj0X/preview",
     instructors: [
       {
         name: "Kush Sagar",
@@ -43,6 +47,8 @@ const pathways = {
   digitalMarketingStrategy: {
     title: "Digital Marketing Strategy",
     imageUrl: "/pathways/DigitalMarketing.jpg",
+    videoUrl:
+      "https://drive.google.com/file/d/150FYSkje0lxMr-Lpw9M_oygOh6rB5WZV/preview",
     instructors: [
       {
         name: "Anthony Isaakidis",
@@ -66,6 +72,8 @@ const pathways = {
   computationalThinking: {
     title: "Computational Thinking",
     imageUrl: "/pathways/ComputationalThinking.jpg",
+    videoUrl:
+      "https://drive.google.com/file/d/1ktAfGEtZT7fZzPbiG4ufa0tlr3xrtGHc/preview",
     instructors: [
       {
         name: "Rishi Daryanani",

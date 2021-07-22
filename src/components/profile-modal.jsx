@@ -12,7 +12,7 @@ const CloseButton = ({ onClose }) => (
 );
 
 const ProfileModal = ({ isOpen, pathway, onClose }) => {
-  const { title, blurb, instructors } = pathway ?? {};
+  const { title, videoUrl, blurb, instructors } = pathway ?? {};
 
   const scrollEl = useRef(null);
 
@@ -44,9 +44,11 @@ const ProfileModal = ({ isOpen, pathway, onClose }) => {
             </div>
           </div>
           <div className="modal-right">
-            <div className="modal-video">
-              <p>Placeholder text for video, 16:9 aspect ratio</p>
-            </div>
+            <iframe
+              className="modal-video"
+              src={videoUrl}
+              title={title}
+            ></iframe>
           </div>
         </div>
         <div className="modal-bottom">
