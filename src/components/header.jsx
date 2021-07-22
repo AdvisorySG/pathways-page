@@ -1,7 +1,7 @@
 import React from "react";
 import { IoIosArrowBack } from "react-icons/io";
 
-import { advisoryLogo } from "../assets";
+import { advisoryLogo, advisoryPathwaysLogo } from "../assets";
 
 import "./header.css";
 
@@ -19,6 +19,11 @@ const Header = () => (
   <div className="header">
     <NavBar />
     <div className="header-bottom">
+      <img
+        className="header-pathways-logo"
+        src={advisoryPathwaysLogo}
+        alt="Advisory Pathways Programme"
+      />
       <div className="header-pathways-intro">
         <p>
           Pathways is a series of skills development courses that helps students
