@@ -32,11 +32,13 @@ const useStyles = makeStyles({
     color: "#0F63D5",
     fontFamily: "Source Sans Pro",
     fontSize: 20,
+    lineHeight: 1.1,
   },
   mentors: {
     color: "#666666",
     fontFamily: "Open Sans",
     fontSize: 14,
+    marginTop: 4,
   },
 });
 
