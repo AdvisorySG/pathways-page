@@ -26,9 +26,18 @@ const Header = () => (
       />
       <div className="header-pathways-intro">
         <p>
-          Pathways is a series of skills development courses that helps students
-          succeed in the real world by upgrading themselves and learning
-          important skills not taught inside the classroom.
+          Pathways is a specially curated series of skills development courses
+          led by industry professionals from established companies, aimed at
+          helping students succeed in the real world by upgrading themselves and
+          learning important skills not taught inside the classroom.
+        </p>
+        <p>
+          In this pilot run, Advisory is proud to partner Facebook to deliver
+          four distinct skills pathways, skills that Facebook employees use
+          day-to-day in their roles. Over the course of four months from August
+          to November 2021, experience hands-on guidance from seasoned
+          instructors at Facebook, as well as peer-to-peer learning from
+          like-minded individuals, in hourly-long classes each month.
         </p>
         <p>
           Click{" "}
@@ -40,6 +49,17 @@ const Header = () => (
             here
           </a>{" "}
           to apply. Applications close on <b>8 August 2021, 2359h (GMT +8)</b>.
+        </p>
+        <p>
+          Click{" "}
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://drive.google.com/file/d/1w7zlMuGY_7hVXeW0LaNKXWWjLRt3ic4G/view?usp=sharing"
+          >
+            here
+          </a>{" "}
+          to view the application guide on CVs and resumes.
         </p>
       </div>
     </div>
