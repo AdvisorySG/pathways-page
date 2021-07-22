@@ -36,7 +36,7 @@ const useStyles = makeStyles({
   mentors: {
     color: "#666666",
     fontFamily: "Open Sans",
-    fontSize: 12,
+    fontSize: 14,
   },
 });
 
@@ -55,9 +55,9 @@ export default function ProfileCard({ pathwayDetails, onReadMore }) {
           <Typography className={classes.pathway}>
             {pathwayDetails.title}
           </Typography>
-          <Typography className={classes.mentors}>
-            {mentors.join(", ")}
-          </Typography>
+          {mentors.map((mentor) => (
+            <Typography className={classes.mentors}>{mentor}</Typography>
+          ))}
         </CardContent>
       </CardActionArea>
     </Card>
