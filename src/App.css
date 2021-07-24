@@ -9,12 +9,6 @@
   margin: auto;
 }
 
-.disclaimer {
-  margin: 8px auto 16px auto;
-  max-width: 90ch;
-  text-align: center;
-}
-
 .results {
   min-height: 100vh;
 }

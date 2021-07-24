@@ -59,19 +59,6 @@ function App() {
       <Header />
 
       <div className="canvas">
-        <p className="disclaimer">
-          <small>
-            The privacy and safety of our instructors is of utmost priority to
-            Advisory. Any attempt to approach or contact our instructors outside
-            of the parameters of Pathways With Facebook—whilst claiming
-            affiliation to Advisory, or misrepresenting a relationship to
-            Advisory—will be treated as misrepresentation, even fraudulent
-            misrepresentation, as considered under the Misrepresentation Act.
-            Advisory will take legal action against any individuals or
-            organisations who attempt to deceive, harass, or otherwise request
-            dishonest assistance from our instructors.
-          </small>
-        </p>
         <div className="card-container">
           {Object.entries(pathways).map(([key, pathway]) => (
             <ProfileCard
