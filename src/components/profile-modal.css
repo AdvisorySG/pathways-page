@@ -101,6 +101,9 @@
   text-align: left;
   font-size: 90%;
 }
+.modal-bottom-header {
+  margin: 12px auto 0 auto;
+}
 @media only screen and (max-width: 600px) {
   .modal-main {
     display: flex;

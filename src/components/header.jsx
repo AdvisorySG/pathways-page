@@ -35,9 +35,14 @@ const Header = () => (
           In this pilot run, Advisory is proud to partner Facebook to deliver
           four distinct skills pathways, skills that Facebook employees use
           day-to-day in their roles. Over the course of four months from August
-          to November 2021, experience hands-on guidance from seasoned
-          instructors at Facebook, as well as peer-to-peer learning from
-          like-minded individuals, in hourly-long classes each month.
+          to November 2021, experience hands-on guidance from Facebook staff
+          from your faculty of choice, as well as interaction with like-minded
+          individuals, in hourly-long classes each month.
+        </p>
+        <p>
+          This programme is open to students aged 16-28. For queries, please
+          feel free to reach out to us at{" "}
+          <a href="mailto:mentoring@advisory.sg">mentoring@advisory.sg</a>.
         </p>
         <p>
           Click{" "}
