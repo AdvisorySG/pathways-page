@@ -30,6 +30,18 @@
   justify-content: center;
 }
 
+.footer {
+  margin: 0 auto 24px auto;
+  padding: 20px;
+  max-width: 90ch;
+  border-top: 1px #cccccc solid;
+}
+
+.footer-text {
+  width: 80%;
+  margin: 0 auto;
+}
+
 @media only screen and (max-width: 768px) {
   .card-container {
     flex-wrap: wrap;
