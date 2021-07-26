@@ -68,15 +68,15 @@ const Header = () => (
         </p>
         <p>
           <small>
-            The privacy and safety of our instructors is of utmost priority to
-            Advisory. Any attempt to approach or contact our instructors outside
-            of the parameters of Pathways With Facebook—whilst claiming
-            affiliation to Advisory, or misrepresenting a relationship to
-            Advisory—will be treated as misrepresentation, even fraudulent
-            misrepresentation, as considered under the Misrepresentation Act.
-            Advisory will take legal action against any individuals or
-            organisations who attempt to deceive, harass, or otherwise request
-            dishonest assistance from our instructors.
+            The privacy and safety of our faculty is of utmost priority to
+            Advisory. Any attempt to approach or contact our faculty outside of
+            the parameters of Pathways With Facebook—whilst claiming affiliation
+            to Advisory, or misrepresenting a relationship to Advisory—will be
+            treated as misrepresentation, even fraudulent misrepresentation, as
+            considered under the Misrepresentation Act. Advisory will take legal
+            action against any individuals or organisations who attempt to
+            deceive, harass, or otherwise request dishonest assistance from our
+            faculty.
           </small>
         </p>
       </div>
