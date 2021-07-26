@@ -15,9 +15,11 @@ const useStyles = makeStyles({
     marginLeft: 10,
     marginRight: 10,
     marginBottom: 48,
+    borderWidth: 2,
+    borderColor: "#D1D1D1",
     borderRadius: "0px",
     "&:hover": {
-      boxShadow: "0px 0px 4px 5px #EBECF0",
+      boxShadow: "0px 0px 4px 5px #E1E1E1",
     },
   },
   media: {
