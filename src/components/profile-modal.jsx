@@ -44,10 +44,15 @@ const ProfileModal = ({ isOpen, pathway, onClose }) => {
               <h2>{title}</h2>
               {dates && (
                 <p style={{ color: "#444" }}>
-                  {dates.map((date) => format(date, "d MMM y")).join(", ")}
+                  <b>Class Dates*</b>:{" "}
+                  {dates.map((date) => format(date, "MMM d")).join(", ")}
                 </p>
               )}
               <p style={{ fontSize: "1.1rem" }}>{blurb}</p>
+              <small>
+                * Before applying to this Pathway, please ensure that you are
+                able to attend and commit to all of the class dates listed.
+              </small>
             </div>
           </div>
           <div className="modal-right">
