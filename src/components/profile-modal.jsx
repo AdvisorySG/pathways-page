@@ -51,7 +51,7 @@ const ProfileModal = ({ isOpen, pathway, onClose }) => {
             ></iframe>
           </div>
         </div>
-        <h3 className="modal-bottom-header">Meet Our Faculty</h3>
+        <h3 className="modal-bottom-header">Meet Your Faculty</h3>
         <div className="modal-bottom">
           {instructors &&
             instructors.map(({ name, designation, imageUrl }) => (
