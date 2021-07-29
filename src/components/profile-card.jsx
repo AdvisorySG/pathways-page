@@ -26,7 +26,11 @@ const useStyles = makeStyles({
     height: 90,
   },
   content: {
+    height: "100%",
     padding: 15,
+  },
+  actionRoot: {
+    height: "100%",
   },
   pathway: {
     color: "#0F63D5",
@@ -54,7 +58,10 @@ export default function ProfileCard({ pathwayDetails, onReadMore }) {
   const mentors = instructors.map(({ name }) => name);
   return (
     <Card className={classes.root} variant="outlined">
-      <CardActionArea onClick={onReadMore}>
+      <CardActionArea
+        classes={{ root: classes.actionRoot }}
+        onClick={onReadMore}
+      >
         <CardMedia className={classes.media} image={imageUrl} title={title} />
         <CardContent className={classes.content}>
           <Typography className={classes.pathway}>{title}</Typography>
