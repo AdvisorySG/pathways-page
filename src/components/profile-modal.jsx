@@ -1,6 +1,8 @@
 import React, { useRef } from "react";
 import ReactModal from "react-modal";
+
 import { disableBodyScroll, clearAllBodyScrollLocks } from "body-scroll-lock";
+import { format } from "date-fns";
 import { MdClose } from "react-icons/md";
 
 import "./profile-modal.css";
@@ -12,7 +14,7 @@ const CloseButton = ({ onClose }) => (
 );
 
 const ProfileModal = ({ isOpen, pathway, onClose }) => {
-  const { title, videoUrl, blurb, instructors } = pathway ?? {};
+  const { title, dates, videoUrl, blurb, instructors } = pathway ?? {};
 
   const scrollEl = useRef(null);
 
@@ -40,6 +42,11 @@ const ProfileModal = ({ isOpen, pathway, onClose }) => {
           <div className="modal-left">
             <div class="modal-metadata-container">
               <h2>{title}</h2>
+              {dates && (
+                <p style={{ color: "#444" }}>
+                  {dates.map((date) => format(date, "d MMM y")).join(", ")}
+                </p>
+              )}
               <p style={{ fontSize: "1.1rem" }}>{blurb}</p>
             </div>
           </div>
