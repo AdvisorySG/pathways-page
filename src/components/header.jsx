@@ -22,7 +22,7 @@ const Header = () => (
       <img
         className="header-pathways-logo"
         src={advisoryPathwaysLogo}
-        alt="Advisory Pathways Programme"
+        alt="Pathways With Facebook"
       />
       <div className="header-pathways-intro">
         <p>
