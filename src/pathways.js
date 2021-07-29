@@ -101,7 +101,7 @@ const pathways = {
       new Date("2021-09-24"),
       new Date("2021-10-22"),
     ],
-    timings: "Each session will be conducted from 4 pm to 5 pm (GMT +8).",
+    timings: "Each session will be conducted from 4:30 pm to 5:30 pm (GMT +8).",
     instructors: [
       {
         name: "Rishi Daryanani",
