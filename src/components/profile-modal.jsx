@@ -1,6 +1,8 @@
 import React, { useRef } from "react";
 import ReactModal from "react-modal";
+
 import { disableBodyScroll, clearAllBodyScrollLocks } from "body-scroll-lock";
+import { format } from "date-fns";
 import { MdClose } from "react-icons/md";
 
 import "./profile-modal.css";
@@ -12,7 +14,7 @@ const CloseButton = ({ onClose }) => (
 );
 
 const ProfileModal = ({ isOpen, pathway, onClose }) => {
-  const { title, videoUrl, blurb, instructors } = pathway ?? {};
+  const { title, dates, videoUrl, blurb, instructors } = pathway ?? {};
 
   const scrollEl = useRef(null);
 
@@ -40,7 +42,17 @@ const ProfileModal = ({ isOpen, pathway, onClose }) => {
           <div className="modal-left">
             <div class="modal-metadata-container">
               <h2>{title}</h2>
+              {dates && (
+                <p style={{ color: "#444" }}>
+                  <b>Class Dates*</b>:{" "}
+                  {dates.map((date) => format(date, "MMM d")).join(", ")}
+                </p>
+              )}
               <p style={{ fontSize: "1.1rem" }}>{blurb}</p>
+              <small>
+                * Before applying to this Pathway, please ensure that you are
+                able to attend and commit to all of the class dates listed.
+              </small>
             </div>
           </div>
           <div className="modal-right">

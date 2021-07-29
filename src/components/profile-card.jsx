@@ -6,6 +6,7 @@ import CardActionArea from "@material-ui/core/CardActionArea";
 import CardContent from "@material-ui/core/CardContent";
 import CardMedia from "@material-ui/core/CardMedia";
 import Typography from "@material-ui/core/Typography";
+import { format } from "date-fns";
 
 import "./profile-card.css";
 
@@ -25,8 +26,11 @@ const useStyles = makeStyles({
     height: 90,
   },
   content: {
-    height: 120,
+    height: "100%",
     padding: 15,
+  },
+  actionRoot: {
+    height: "100%",
   },
   pathway: {
     color: "#0F63D5",
@@ -34,8 +38,14 @@ const useStyles = makeStyles({
     fontSize: 20,
     lineHeight: 1.1,
   },
-  mentors: {
-    color: "#666666",
+  mentor: {
+    color: "#666",
+    fontFamily: "Open Sans",
+    fontSize: 12,
+    marginTop: 4,
+  },
+  dates: {
+    color: "#444",
     fontFamily: "Open Sans",
     fontSize: 14,
     marginTop: 4,
@@ -43,22 +53,23 @@ const useStyles = makeStyles({
 });
 
 export default function ProfileCard({ pathwayDetails, onReadMore }) {
+  const { dates, imageUrl, instructors, title } = pathwayDetails;
   const classes = useStyles();
-  const mentors = pathwayDetails.instructors.map(({ name }) => name);
+  const mentors = instructors.map(({ name }) => name);
   return (
     <Card className={classes.root} variant="outlined">
-      <CardActionArea onClick={onReadMore}>
-        <CardMedia
-          className={classes.media}
-          image={pathwayDetails.imageUrl}
-          title={pathwayDetails.title}
-        />
+      <CardActionArea
+        classes={{ root: classes.actionRoot }}
+        onClick={onReadMore}
+      >
+        <CardMedia className={classes.media} image={imageUrl} title={title} />
         <CardContent className={classes.content}>
-          <Typography className={classes.pathway}>
-            {pathwayDetails.title}
+          <Typography className={classes.pathway}>{title}</Typography>
+          <Typography className={classes.dates}>
+            {dates.map((date) => format(date, "MMM d")).join(", ")}
           </Typography>
           {mentors.map((mentor) => (
-            <Typography className={classes.mentors}>{mentor}</Typography>
+            <Typography className={classes.mentor}>{mentor}</Typography>
           ))}
         </CardContent>
       </CardActionArea>

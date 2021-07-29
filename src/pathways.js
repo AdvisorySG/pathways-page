@@ -4,6 +4,12 @@ const pathways = {
     imageUrl: "/pathways/BusinessStrategy.jpg",
     videoUrl:
       "https://drive.google.com/file/d/1y4WLf0sYHDwFJHeH7HKYJ-Zh5tHqWkKU/preview",
+    dates: [
+      new Date("2021-08-20"),
+      new Date("2021-09-24"),
+      new Date("2021-10-22"),
+      new Date("2021-11-19"),
+    ],
     instructors: [
       {
         name: "Philip Hur",
@@ -24,6 +30,12 @@ const pathways = {
     imageUrl: "/pathways/CareerDevelopment.jpg",
     videoUrl:
       "https://drive.google.com/file/d/1IpBSknayeid9T4gEy05cOLnaYagjTj0X/preview",
+    dates: [
+      new Date("2021-08-18"),
+      new Date("2021-09-22"),
+      new Date("2021-10-20"),
+      new Date("2021-11-17"),
+    ],
     instructors: [
       {
         name: "Kush Sagar",
@@ -49,6 +61,12 @@ const pathways = {
     imageUrl: "/pathways/DigitalMarketing.jpg",
     videoUrl:
       "https://drive.google.com/file/d/150FYSkje0lxMr-Lpw9M_oygOh6rB5WZV/preview",
+    dates: [
+      new Date("2021-08-25"),
+      new Date("2021-09-29"),
+      new Date("2021-10-27"),
+      new Date("2021-11-24"),
+    ],
     instructors: [
       {
         name: "Anthony Isaakidis",
@@ -74,6 +92,11 @@ const pathways = {
     imageUrl: "/pathways/ComputationalThinking.jpg",
     videoUrl:
       "https://drive.google.com/file/d/1ktAfGEtZT7fZzPbiG4ufa0tlr3xrtGHc/preview",
+    dates: [
+      new Date("2021-08-27"),
+      new Date("2021-09-24"),
+      new Date("2021-10-22"),
+    ],
     instructors: [
       {
         name: "Rishi Daryanani",
