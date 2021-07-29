@@ -10,6 +10,7 @@ const pathways = {
       new Date("2021-10-22"),
       new Date("2021-11-19"),
     ],
+    timings: "Each session will be conducted from 7 pm to 8 pm (GMT +8).",
     instructors: [
       {
         name: "Philip Hur",
@@ -36,6 +37,7 @@ const pathways = {
       new Date("2021-10-20"),
       new Date("2021-11-17"),
     ],
+    timings: "Each session will be conducted from 6 pm to 7 pm (GMT +8).",
     instructors: [
       {
         name: "Kush Sagar",
@@ -67,6 +69,8 @@ const pathways = {
       new Date("2021-10-27"),
       new Date("2021-11-24"),
     ],
+    timings:
+      "The Aug session will be conducted from 4 pm to 5 pm (GMT +8), while the rest of the sessions will be conducted from 5 pm to 6 pm (GMT +8).",
     instructors: [
       {
         name: "Anthony Isaakidis",
@@ -97,6 +101,7 @@ const pathways = {
       new Date("2021-09-24"),
       new Date("2021-10-22"),
     ],
+    timings: "Each session will be conducted from 4 pm to 5 pm (GMT +8).",
     instructors: [
       {
         name: "Rishi Daryanani",

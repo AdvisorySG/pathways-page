@@ -14,7 +14,7 @@ const CloseButton = ({ onClose }) => (
 );
 
 const ProfileModal = ({ isOpen, pathway, onClose }) => {
-  const { title, dates, videoUrl, blurb, instructors } = pathway ?? {};
+  const { title, dates, timings, videoUrl, blurb, instructors } = pathway ?? {};
 
   const scrollEl = useRef(null);
 
@@ -44,10 +44,11 @@ const ProfileModal = ({ isOpen, pathway, onClose }) => {
               <h2>{title}</h2>
               {dates && (
                 <p style={{ color: "#444" }}>
-                  <b>Class Dates*</b>:{" "}
-                  {dates.map((date) => format(date, "MMM d")).join(", ")}
+                  <b>Class Dates</b>:{" "}
+                  {dates.map((date) => format(date, "MMM d")).join(", ")}.
                 </p>
               )}
+              {timings && <p style={{ color: "#444" }}>{timings}*</p>}
               <p style={{ fontSize: "1.1rem" }}>{blurb}</p>
               <small>
                 * Before applying to this Pathway, please ensure that you are
