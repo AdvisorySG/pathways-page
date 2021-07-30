@@ -17,8 +17,23 @@ const useStyles = makeStyles({
     marginRight: 10,
     marginBottom: 48,
     borderRadius: "0px",
+    boxShadow: [
+      "0 0.6px 2.8px -80px rgba(0, 0, 0, 0.287)",
+      "0 1.3px 6.7px -80px rgba(0, 0, 0, 0.389)",
+      "0 2.5px 12.5px -80px rgba(0, 0, 0, 0.456)",
+      "0 4.5px 22.3px -80px rgba(0, 0, 0, 0.516)",
+      "0 8.4px 41.8px -80px rgba(0, 0, 0, 0.594)",
+      "0 20px 100px -80px rgba(0, 0, 0, 0.8)",
+    ],
     "&:hover": {
-      boxShadow: "0px 0px 4px 5px #EBECF0",
+      boxShadow: [
+        "0 2px 4.6px rgba(0, 0, 0, 0.036)",
+        "0 4.9px 11.2px rgba(0, 0, 0, 0.049)",
+        "0 9.3px 21px rgba(0, 0, 0, 0.057)",
+        "0 16.5px 37.5px rgba(0, 0, 0, 0.065)",
+        "0 30.9px 70.2px rgba(0, 0, 0, 0.074)",
+        "0 74px 168px rgba(0, 0, 0, 0.1)",
+      ],
     },
   },
   media: {
@@ -57,7 +72,7 @@ export default function ProfileCard({ pathwayDetails, onReadMore }) {
   const classes = useStyles();
   const mentors = instructors.map(({ name }) => name);
   return (
-    <Card className={classes.root} variant="outlined">
+    <Card classes={{ root: classes.root }} variant="outlined">
       <CardActionArea
         classes={{ root: classes.actionRoot }}
         onClick={onReadMore}
