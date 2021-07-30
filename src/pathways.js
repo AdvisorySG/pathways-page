@@ -2,8 +2,7 @@ const pathways = {
   businessStrategy: {
     title: "Business Strategy",
     imageUrl: "/pathways/BusinessStrategy.jpg",
-    videoUrl:
-      "https://drive.google.com/file/d/1y4WLf0sYHDwFJHeH7HKYJ-Zh5tHqWkKU/preview",
+    videoUrl: "https://www.youtube.com/embed/S2Krx-zNkNQ",
     dates: [
       new Date("2021-08-20"),
       new Date("2021-09-24"),
@@ -29,8 +28,7 @@ const pathways = {
   careerDevelopment: {
     title: "Career Development",
     imageUrl: "/pathways/CareerDevelopment.jpg",
-    videoUrl:
-      "https://drive.google.com/file/d/1IpBSknayeid9T4gEy05cOLnaYagjTj0X/preview",
+    videoUrl: "https://www.youtube.com/embed/zVydynAvSz0",
     dates: [
       new Date("2021-08-18"),
       new Date("2021-09-22"),
@@ -61,8 +59,7 @@ const pathways = {
   digitalMarketingStrategy: {
     title: "Digital Marketing Strategy",
     imageUrl: "/pathways/DigitalMarketing.jpg",
-    videoUrl:
-      "https://drive.google.com/file/d/150FYSkje0lxMr-Lpw9M_oygOh6rB5WZV/preview",
+    videoUrl: "https://www.youtube.com/embed/Zzv27HUlFNY",
     dates: [
       new Date("2021-08-25"),
       new Date("2021-09-29"),
@@ -94,8 +91,7 @@ const pathways = {
   computationalThinking: {
     title: "Computational Thinking",
     imageUrl: "/pathways/ComputationalThinking.jpg",
-    videoUrl:
-      "https://drive.google.com/file/d/1ktAfGEtZT7fZzPbiG4ufa0tlr3xrtGHc/preview",
+    videoUrl: "https://www.youtube.com/embed/7DEgpoGre-M",
     dates: [
       new Date("2021-08-27"),
       new Date("2021-09-24"),
